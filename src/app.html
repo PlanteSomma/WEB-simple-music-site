@@ -63,13 +63,13 @@
   >
     <div>.</div>
 
-    <div
+    <div aria-label="Music Player" role="region" aria-live="polite"
       id="music_player"
       class="music player"
       style="
         --bg: rgb(207, 190, 190);
         --radius: 20px;
-        --shadow-inset:10;;
+        --shadow-inset: 10;
         --d: flex;
         --fd: column;
         --ai: center;
@@ -77,38 +77,45 @@
         --w: 28rem;
       "
     >
-      <div
+      <div aria-label="Music Player Controls" 
         class="player controls"
-        style="--d: flex;--jc: center; --w: 100%; --m: 1rem 0"
+        style="--d: flex; --jc: center; --w: 100%; --m: 1rem 0"
       >
         <!-- Play/Pause Button -->
         <button
           _="
-        on click fetch /audioPlayer as html with timeout:300ms
+        on click put 'Loading...' into .track-info
+          then fetch /audioPlayer as html
             put the result into #music_player
             then for script in #music_player.querySelectorAll('script') 
               eval(script.textContent) 
             end"
           aria-label="Play/Pause"
-          style="--bg: rgb(255, 255, 255); --border: none; --c: #333; --size: 2rem"
+          style="
+            --bg: rgb(255, 255, 255);
+            --border: none;
+            --c: #333;
+            --size: 2rem;
+          "
         >
           ▶️
         </button>
       </div>
 
       <div
-        class="Now Playing Info"
+        aria-label="Now Playing Info"
         style="--d: flex; --fd: column; --ai: center"
       >
-        <span style="--size: 1rem; --c: #333; --weight: bold">Click Play</span>
-
+        <span class="track-info" style="--size: 1rem; --c: #333; --weight: bold"
+          >Click Play</span
+        >
       </div>
     </div>
 
     <!-- Audio Control component -->
     <div
       style="
-        --v:hidden;
+        --v: hidden;
         --bg: darkgrey;
         --d: flex;
         --fd: column;

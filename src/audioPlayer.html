@@ -29,7 +29,7 @@
   </button>
 </div>
 <span style="--size: 1rem; --c: #666; --weight: bold">Now Playing</span>
-<div id="trackInfo" class="track-info" style="--size: 0.9rem; --c: #333">Track Name</div>
+<div id="trackInfo" class="track-info" style="--size: 0.9rem; --c: #333">Loading...</div>
 <script>
   const audioPlayer = document.getElementById('audioPlayer');
   const playPauseButton = document.getElementById('playPauseButton'); // Reference to the play/pause button
@@ -63,7 +63,7 @@
               playPauseButton.textContent = '⏸️'; // Update to pause emoji when playing
             }).catch(error => {
               console.error("Error playing the track:", error);
-              trackInfoElement.textContent = "Click to Play"; // Revert to initial message if playback fails
+              trackInfoElement.textContent = "Loading...."; // Revert to initial message if playback fails
             });
           } else {
             console.log('Track index out of bounds');
@@ -92,6 +92,6 @@
         audioPlayer.addEventListener('ended', playNextTrack); // Automatically move to the next track when one ends
 
         // Initially set to "Click to Play"
-        trackInfoElement.textContent = "Click to Play";
+        trackInfoElement.textContent = "Loading...";
         loadAndPlayTrack(0); // Load and play the first track
 </script>
