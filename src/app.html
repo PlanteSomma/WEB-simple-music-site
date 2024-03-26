@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
   <head>
     <meta charset="UTF-8" />
     <meta
+      content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="https://startr.style/style.css" />
     <style>
@@ -49,6 +44,13 @@
         font-size: 0.8rem;
       }
     </style>
+    <title>Classic Lofi - Music Player</title>
+    <meta name="description" content="Classic Lofi - Music Player" />
+    <meta name="keywords" content="Classic Lofi, Music Player" />
+    <meta name="author" content="Classic Lofi - Startr LLC" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    
   </head>
   <body
     style="
@@ -66,7 +68,10 @@
   >
     <div>.</div>
 
-    <div aria-label="Music Player" role="region" aria-live="polite"
+    <div
+      aria-label="Music Player"
+      role="region"
+      aria-live="polite"
       id="music_player"
       class="music player"
       style="
@@ -80,7 +85,8 @@
         --w: 28rem;
       "
     >
-      <div aria-label="Music Player Controls" 
+      <div
+        aria-label="Music Player Controls"
         class="player controls"
         style="--d: flex; --jc: center; --w: 100%; --m: 1rem 0"
       >
@@ -126,9 +132,7 @@
         --p: 2rem;
         --as: start;
       "
-    >
-      
-    </div>
+    ></div>
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
   </body>
 </html>
