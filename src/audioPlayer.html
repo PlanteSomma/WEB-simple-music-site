@@ -1,4 +1,4 @@
-<audio controls="" id="audioPlayer" style="--d:none">
+<audio id="audioPlayer" controls style="--d: none">
   Your browser does not support the audio element.
 </audio>
 <div
@@ -13,8 +13,8 @@
     ⏮️
   </button>
   <button
-    aria-label="Play/Pause"
     id="playPauseButton"
+    aria-label="Play/Pause"
     style="--bg: lightgrey; --border: none; --c: #333; --size: 2rem"
     onclick="togglePlayPause()"
   >
@@ -29,7 +29,9 @@
   </button>
 </div>
 <span style="--size: 1rem; --c: #666; --weight: bold">Now Playing</span>
-<div id="trackInfo" class="track-info" style="--size: 0.9rem; --c: #333">Loading...</div>
+<div id="trackInfo" class="track-info" style="--size: 0.9rem; --c: #333">
+  Loading...
+</div>
 <script>
   const audioPlayer = document.getElementById('audioPlayer');
   const playPauseButton = document.getElementById('playPauseButton'); // Reference to the play/pause button
