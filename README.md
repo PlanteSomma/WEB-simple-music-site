@@ -11,7 +11,7 @@ Reach Thousands of Visitors for Free
 
 Pair our setup with affordable hosting solutions like Netlify or Cloudflare Pages, and you'll be reaching thousands of visitors every month -- all at no cost.
 
-We currently have an example site https://classiclofi.com/ on Cloudflare Pages.
+We currently have an example at https://classiclofi.com/ on Cloudflare Pages.
 
 Your Music, Your Way
 --------------------
@@ -23,3 +23,8 @@ Get Started in Minutes
 
 [![use this template](https://img.shields.io/badge/use_this_template-2ea44f?style=for-the-badge)](https://github.com/new?template_name=WEB-simple-music-site&template_owner=PlanteSomma) to create your own project. Then, simply add your mp3s to the `src/files/` directory.
 
+
+Style your pages using Startr.Style
+----------------------------------
+
+Follow our amazing documentation at [Startr.Style](https://startr.style) to learn how to design and style your pages.
