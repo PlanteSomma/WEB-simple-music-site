@@ -21,5 +21,5 @@ No annoying ads, no competition from other musicians, and no worries about fake 
 Get Started in Minutes
 ----------------------
 
-[![use this template](https://img.shields.io/badge/use_this_template-2ea44f?style=for-the-badge)](https://github.com/new?template_name=WEB-simple-music-site&template_owner=PlanteSomma)to create your own project. Then, simply add your mp3s to the `src/files/` directory.
+[![use this template](https://img.shields.io/badge/use_this_template-2ea44f?style=for-the-badge)](https://github.com/new?template_name=WEB-simple-music-site&template_owner=PlanteSomma) to create your own project. Then, simply add your mp3s to the `src/files/` directory.
 
